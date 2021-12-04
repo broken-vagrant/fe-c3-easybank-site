@@ -1,0 +1,72 @@
+.header {
+  font-size: 1rem;
+  width: 100%;
+  background: $color-white;
+  .container {
+    max-width: $vw-desktop-max;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10em;
+    user-select: none;
+    background: $color-white;
+    transition: border .2s ease;
+
+    @media (max-width: $vw-mobile-max) {
+      height: 6em;
+      padding: 0 1rem;
+    }
+  }
+  &__logo {
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    margin-left: 4em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @media (max-width: $vw-mobile-max) {
+      display: none;
+    }
+    > a + a {
+      margin-left: 3em;
+    }
+    a {
+      font-size: 1.4em; 
+      text-decoration: none;
+      color: $color-grayish-blue;
+      height: inherit;
+      display: flex;
+      align-items: center;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+      &:hover {
+        color: $color-very-lightgray;
+      }
+      &:hover:after{
+       border-bottom: 3px solid $color-lime-green;
+      }
+    }
+  }
+  &__mobile-nav {
+    background: transparent;
+    border: 0;
+    padding: .5rem;
+    cursor: pointer;
+    @media (min-width: $vw-mobile-max) {
+      display: none;
+    }
+  }
+  .invite {
+    @media (max-width: $vw-mobile-max) {
+      display: none;
+    }
+  }
+}

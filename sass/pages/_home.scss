@@ -1,0 +1,195 @@
+.container {
+  max-width: $vw-desktop-max;
+  margin: 0 auto;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  background: $color-gray-1;
+
+  @media (max-width: $vw-mobile-max) {
+    padding: 0 .5rem
+  }
+  .container {
+    font-size: 1rem;
+
+    .info {
+      width: 30%;
+      padding: 12em 0;
+
+      @media (max-width: $vw-mobile-max) {
+        width: 100%;
+        padding-top: 30em;
+        text-align: center;
+      }
+
+      .btn {
+        width: 60%;
+      }
+    }
+  }
+  &::after {
+    content: '';
+    width: 1200px;
+    height: 1200px;
+    z-index: -2;
+    position: absolute;
+    top: -380px;
+    right: -250px;
+    background: url($image-path+ "/bg-intro-desktop.svg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    user-select: none;
+    
+    @media (max-width: $vw-mobile-max) {
+     width: 500px;
+     height: 500px;
+     top: -87px;
+     right: -72px;
+    }
+  }
+  .mockups {
+    position: absolute;
+    user-select: none;
+    z-index: -1;
+    top: -100px;
+    right: -350px;
+    width: 1000px;
+    height: 1000px;
+    @media (max-width: $vw-mobile-max) {
+      top: -68px;
+      right: -20px;
+      width: 400px;
+      height: 400px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+.feature {
+  width: 100%;
+  background: $color-gray-2;
+
+  @media (max-width: $vw-mobile-max) {
+    padding: 0 .5rem
+  }
+  .container {
+    font-size: 1rem;
+  }
+  .inner-wrapper {
+    padding: 8rem 0;
+  }
+  @media (max-width: $vw-mobile-max) {
+    text-align: center;
+  }
+  .feature-items {
+    display: flex;
+    flex-flow: row wrap;
+    @media (max-width: $vw-mobile-max) {
+      flex-direction: column;
+    }
+  }
+  .feature-item {
+    flex-basis: calc(( 100% - 12rem ) / 4);
+    display: flex;
+    flex-direction: column;
+    .logo {
+      user-select: none;
+      margin: 2rem 0;
+    }
+  }
+  .feature-item + .feature-item {
+    margin-left: 4rem;
+    @media (max-width: $vw-mobile-max) {
+      margin-left: 0;
+    }
+  }
+}
+.blog {
+  position: relative;
+  width: 100%;
+  background: $color-gray-1;
+
+  @media (max-width: $vw-mobile-max) {
+    padding: 0 1rem;
+    .post + .post {
+      margin-top: 2rem;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+  .container {
+    font-size: 1rem;
+    padding: 10rem 0;
+  }
+  h2 {
+    margin: 3rem 0;
+  }
+  .posts {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    @media (max-width: $vw-mobile-max) {
+      flex-direction: column;
+    }
+  }
+  .post {
+    width: 23%;
+
+    @media (max-width: $vw-mobile-max) {
+      width: 100%;
+    }
+
+    border-radius: 4px;
+    background: $color-white;
+    a {
+      text-decoration: none;
+      transition: color .3s ease;
+      &:hover > h3 {
+        color: $color-lime-green-1;
+      }
+    }
+    .image {
+      position: relative;
+      overflow: hidden;
+      height: 20rem;
+      border-radius: 4px;
+      user-select: none;
+      img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: middle;
+        object-fit: fill;
+        object-position: center;
+      }
+    }
+    .info {
+      padding: 1.2rem;
+    }
+    .author {
+      color: $color-grayish-blue;
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+    .title {
+      color: $color-black;
+    }
+    p {
+      margin: 1rem 0;
+    }
+  }
+  .post + .post {
+    margin-left: 2.5rem;
+    @media (max-width: $vw-mobile-max) {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.btn {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  border-radius: 4em;
+  text-align: center;
+  cursor: pointer;
+  background: $linear-g-primary;
+  color: $color-white;
+  padding: .7em 3em;
+  border: 1px solid transparent;
+  font-weight: bold;
+  position: relative;
+  user-select: none;
+  transition: all .2s linear;
+  width: 100%;
+  @media (max-width: $vw-mobile-max) {
+    padding: .7em 2em;
+  }
+  svg {
+    margin: 0 .2em;
+    vertical-align: top;
+  }
+  svg path {
+    fill: currentColor;
+  }
+  &:hover {
+    opacity: .55;
+    // box-shadow: $shadow-smooth-16;
+  }
+  &:hover:active {
+    box-shadow: none;
+  }
+}

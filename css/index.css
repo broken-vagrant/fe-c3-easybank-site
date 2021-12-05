@@ -291,7 +291,7 @@ footer {
       @media (max-width: 375px) {
         .intro .container .info {
           width: 100%;
-          padding-top: 30em;
+          padding-top: 35em;
           text-align: center; } }
       .intro .container .info .btn {
         width: 60%; }

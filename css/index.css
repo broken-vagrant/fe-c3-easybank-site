@@ -311,7 +311,7 @@ footer {
       .intro::after {
         width: 500px;
         height: 500px;
-        top: -87px;
+        top: -160px;
         right: -72px; } }
   .intro .mockups {
     position: absolute;
@@ -324,13 +324,13 @@ footer {
     @media (max-width: 375px) {
       .intro .mockups {
         top: -68px;
-        right: -20px;
+        right: -40px;
         width: 400px;
         height: 400px; }
         .intro .mockups img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain;
           object-position: center; } }
 
 .feature {

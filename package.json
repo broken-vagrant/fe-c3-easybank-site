@@ -4,7 +4,7 @@
   "main": "index.js",
   "author": "zkindest <zkindest5@gmail.com>",
   "license": "MIT",
-  "homepage": "https://zkindest.github.io/fe-c1-product-page",
+  "homepage": "https://zkindest.github.io/fe-c3-easybank-site",
   "scripts": {
     "compile:sass": "node-sass sass/index.scss css/index.css -w sass/**/*.scss",
     "deploy": "gh-pages -d build/"

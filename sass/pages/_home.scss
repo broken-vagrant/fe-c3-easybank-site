@@ -20,7 +20,7 @@
 
       @media (max-width: $vw-mobile-max) {
         width: 100%;
-        padding-top: 30em;
+        padding-top: 35em;
         text-align: center;
       }
 
@@ -45,7 +45,7 @@
     @media (max-width: $vw-mobile-max) {
      width: 500px;
      height: 500px;
-     top: -87px;
+     top: -160px;
      right: -72px;
     }
   }
@@ -59,13 +59,13 @@
     height: 1000px;
     @media (max-width: $vw-mobile-max) {
       top: -68px;
-      right: -20px;
+      right: -40px;
       width: 400px;
       height: 400px;
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center;
       }
     }

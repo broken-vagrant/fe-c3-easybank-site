@@ -250,13 +250,20 @@ footer {
   .post p {
     margin: 1rem 0; }
 
+.post + .post {
+  margin-left: 2.5rem; }
+  @media (max-width: 375px) {
+    .post + .post {
+      margin-left: 0;
+      margin-top: 2rem; } }
+
 .nav-menu {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.08), 0 4px 4px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.08), 0 16px 16px rgba(0, 0, 0, 0.08), 0 24px 24px rgba(0, 0, 0, 0.08);
   border-radius: .5em;
   background: white;
   position: absolute;
   width: 96%;
-  top: 10%;
+  top: 12%;
   right: 2%;
   left: auto;
   font-size: 1rem;
@@ -386,9 +393,3 @@ footer {
     @media (max-width: 375px) {
       .blog .posts {
         flex-direction: column; } }
-  .blog .post + .post {
-    margin-left: 2.5rem; }
-    @media (max-width: 375px) {
-      .blog .post + .post {
-        margin-left: 0;
-        margin-top: 2rem; } }

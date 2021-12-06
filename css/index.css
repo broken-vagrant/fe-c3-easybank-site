@@ -229,7 +229,7 @@ footer {
     position: relative;
     overflow: hidden;
     height: 20rem;
-    border-radius: 4px;
+    border-radius: 4px 4px 0 0;
     user-select: none; }
     .post .image img {
       width: 100%;
@@ -321,24 +321,22 @@ footer {
         top: -160px;
         right: -72px; } }
   .intro .mockups {
-    position: absolute;
-    user-select: none;
-    z-index: -1;
-    top: -100px;
-    right: -350px;
+    background: url(../images/image-mockups.png) no-repeat;
     width: 1000px;
-    height: 1000px; }
+    height: 1000px;
+    background-position: center;
+    background-size: auto;
+    z-index: -1;
+    position: absolute;
+    right: -137px;
+    top: -167px; }
     @media (max-width: 375px) {
       .intro .mockups {
-        top: -68px;
+        background-size: cover;
+        top: -120px;
         right: -40px;
         width: 400px;
-        height: 400px; }
-        .intro .mockups img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-          object-position: center; } }
+        height: 450px; } }
 
 .feature {
   width: 100%;

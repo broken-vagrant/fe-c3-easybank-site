@@ -1,6 +1,6 @@
 .nav-menu {
   box-shadow: $shadow-smooth-24;
-  border-radius: .5em;
+  border-radius: 0.5em;
   background: white;
   position: absolute;
   width: 96%;
@@ -20,6 +20,11 @@
     text-decoration: none;
     font-size: 1.5em;
     font-weight: 300;
-    color: $color-black
+    color: $color-black;
+  }
+  @media (min-width: $vw-mobile-min) {
+    & {
+      display: none;
+    }
   }
 }

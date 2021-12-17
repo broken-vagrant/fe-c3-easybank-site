@@ -6,25 +6,25 @@
   cursor: pointer;
   background: $linear-g-primary;
   color: $color-white;
-  padding: .7em 3em;
+  padding: 0.7em 3em;
   border: 1px solid transparent;
   font-weight: bold;
   position: relative;
   user-select: none;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   width: 100%;
-  @media (max-width: $vw-mobile-max) {
-    padding: .7em 2em;
+  @media (max-width: $vw-mobile-min) {
+    padding: 0.7em 2em;
   }
   svg {
-    margin: 0 .2em;
+    margin: 0 0.2em;
     vertical-align: top;
   }
   svg path {
     fill: currentColor;
   }
   &:hover {
-    opacity: .55;
+    opacity: 0.55;
     // box-shadow: $shadow-smooth-16;
   }
   &:hover:active {

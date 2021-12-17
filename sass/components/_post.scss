@@ -1,7 +1,7 @@
 .post {
   width: 23%;
 
-  @media (max-width: $vw-mobile-max) {
+  @media (max-width: $vw-mobile-min) {
     width: 100%;
   }
 
@@ -9,7 +9,7 @@
   background: $color-white;
   a {
     text-decoration: none;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
     &:hover > h3 {
       color: $color-lime-green-1;
     }
@@ -47,7 +47,7 @@
 }
 .post + .post {
   margin-left: 2.5rem;
-  @media (max-width: $vw-mobile-max) {
+  @media (max-width: $vw-mobile-min) {
     margin-left: 0;
     margin-top: 2rem;
   }

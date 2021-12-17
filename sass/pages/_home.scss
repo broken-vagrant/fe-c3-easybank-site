@@ -1,5 +1,5 @@
 .container {
-  max-width: $vw-desktop-max;
+  max-width: $vw-desktop-min;
   margin: 0 auto;
 }
 
@@ -8,8 +8,8 @@
   width: 100%;
   background: $color-gray-1;
 
-  @media (max-width: $vw-mobile-max) {
-    padding: 0 .5rem
+  @media (max-width: $vw-mobile-min) {
+    padding: 0 0.5rem;
   }
   .container {
     font-size: 1rem;
@@ -18,7 +18,7 @@
       width: 30%;
       padding: 12em 0;
 
-      @media (max-width: $vw-mobile-max) {
+      @media (max-width: $vw-mobile-min) {
         width: 100%;
         padding-top: 35em;
         text-align: center;
@@ -30,23 +30,23 @@
     }
   }
   &::after {
-    content: '';
+    content: "";
     width: 1200px;
     height: 1200px;
     z-index: -2;
     position: absolute;
     top: -380px;
     right: -250px;
-    background: url($image-path+ "/bg-intro-desktop.svg") no-repeat;
+    background: url($image-path + "/bg-intro-desktop.svg") no-repeat;
     background-position: center;
     background-size: contain;
     user-select: none;
-    
-    @media (max-width: $vw-mobile-max) {
-     width: 500px;
-     height: 500px;
-     top: -160px;
-     right: -72px;
+
+    @media (max-width: $vw-mobile-min) {
+      width: 500px;
+      height: 500px;
+      top: -160px;
+      right: -72px;
     }
   }
   .mockups {
@@ -59,7 +59,7 @@
     position: absolute;
     right: -137px;
     top: -167px;
-    @media (max-width: $vw-mobile-max) {
+    @media (max-width: $vw-mobile-min) {
       background-size: cover;
       top: -120px;
       right: -40px;
@@ -72,8 +72,8 @@
   width: 100%;
   background: $color-gray-2;
 
-  @media (max-width: $vw-mobile-max) {
-    padding: 0 .5rem
+  @media (max-width: $vw-mobile-min) {
+    padding: 0 0.5rem;
   }
   .container {
     font-size: 1rem;
@@ -81,18 +81,18 @@
   .inner-wrapper {
     padding: 8rem 0;
   }
-  @media (max-width: $vw-mobile-max) {
+  @media (max-width: $vw-mobile-min) {
     text-align: center;
   }
   .feature-items {
     display: flex;
     flex-flow: row wrap;
-    @media (max-width: $vw-mobile-max) {
+    @media (max-width: $vw-mobile-min) {
       flex-direction: column;
     }
   }
   .feature-item {
-    flex-basis: calc(( 100% - 12rem ) / 4);
+    flex-basis: calc((100% - 12rem) / 4);
     display: flex;
     flex-direction: column;
     .logo {
@@ -102,7 +102,7 @@
   }
   .feature-item + .feature-item {
     margin-left: 4rem;
-    @media (max-width: $vw-mobile-max) {
+    @media (max-width: $vw-mobile-min) {
       margin-left: 0;
     }
   }
@@ -112,7 +112,7 @@
   width: 100%;
   background: $color-gray-1;
 
-  @media (max-width: $vw-mobile-max) {
+  @media (max-width: $vw-mobile-min) {
     padding: 0 1rem;
     h2 {
       text-align: center;
@@ -129,7 +129,7 @@
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    @media (max-width: $vw-mobile-max) {
+    @media (max-width: $vw-mobile-min) {
       flex-direction: column;
     }
   }

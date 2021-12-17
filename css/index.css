@@ -55,7 +55,7 @@ h3 {
     height: 10em;
     user-select: none;
     background: white;
-    transition: border .2s ease; }
+    transition: border 0.2s ease; }
     @media (max-width: 375px) {
       .header .container {
         height: 6em;
@@ -93,7 +93,7 @@ h3 {
   .header__mobile-nav {
     background: transparent;
     border: 0;
-    padding: .5rem;
+    padding: 0.5rem;
     cursor: pointer; }
     @media (min-width: 375px) {
       .header__mobile-nav {
@@ -129,7 +129,8 @@ footer {
         flex-direction: column;
         align-items: center; } }
   footer .logo {
-    color: white; }
+    color: white;
+    cursor: pointer; }
     footer .logo svg path[fill] {
       fill: white; }
   @media (max-width: 375px) {
@@ -144,7 +145,7 @@ footer {
       list-style: none; }
     footer .socials li {
       display: inline-block;
-      padding: .5rem; }
+      padding: 0.5rem; }
   footer .icon {
     width: 2rem;
     height: 2rem;
@@ -183,7 +184,7 @@ footer {
       flex-flow: row wrap; }
     footer .links li {
       flex-basis: 50%;
-      padding: .5rem 1rem 1rem; }
+      padding: 0.5rem 1rem 1rem; }
 
 .btn {
   font-size: 1.5rem;
@@ -193,23 +194,23 @@ footer {
   cursor: pointer;
   background: linear-gradient(90deg, #020024 0%, #36d52d 0%, #00d4ff 100%);
   color: white;
-  padding: .7em 3em;
+  padding: 0.7em 3em;
   border: 1px solid transparent;
   font-weight: bold;
   position: relative;
   user-select: none;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   width: 100%; }
   @media (max-width: 375px) {
     .btn {
-      padding: .7em 2em; } }
+      padding: 0.7em 2em; } }
   .btn svg {
-    margin: 0 .2em;
+    margin: 0 0.2em;
     vertical-align: top; }
   .btn svg path {
     fill: currentColor; }
   .btn:hover {
-    opacity: .55; }
+    opacity: 0.55; }
   .btn:hover:active {
     box-shadow: none; }
 
@@ -222,7 +223,7 @@ footer {
       width: 100%; } }
   .post a {
     text-decoration: none;
-    transition: color .3s ease; }
+    transition: color 0.3s ease; }
     .post a:hover > h3 {
       color: #26cfa5; }
   .post .image {
@@ -259,7 +260,7 @@ footer {
 
 .nav-menu {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.08), 0 4px 4px rgba(0, 0, 0, 0.08), 0 8px 8px rgba(0, 0, 0, 0.08), 0 16px 16px rgba(0, 0, 0, 0.08), 0 24px 24px rgba(0, 0, 0, 0.08);
-  border-radius: .5em;
+  border-radius: 0.5em;
   background: white;
   position: absolute;
   width: 96%;
@@ -278,6 +279,9 @@ footer {
     font-size: 1.5em;
     font-weight: 300;
     color: black; }
+  @media (min-width: 375px) {
+    .nav-menu {
+      display: none; } }
 
 .container {
   max-width: 1440px;
@@ -289,7 +293,7 @@ footer {
   background: rgba(163, 164, 174, 0.068); }
   @media (max-width: 375px) {
     .intro {
-      padding: 0 .5rem; } }
+      padding: 0 0.5rem; } }
   .intro .container {
     font-size: 1rem; }
     .intro .container .info {
@@ -303,7 +307,7 @@ footer {
       .intro .container .info .btn {
         width: 60%; }
   .intro::after {
-    content: '';
+    content: "";
     width: 1200px;
     height: 1200px;
     z-index: -2;
@@ -343,7 +347,7 @@ footer {
   background: rgba(139, 139, 156, 0.11); }
   @media (max-width: 375px) {
     .feature {
-      padding: 0 .5rem; } }
+      padding: 0 0.5rem; } }
   .feature .container {
     font-size: 1rem; }
   .feature .inner-wrapper {
@@ -358,7 +362,7 @@ footer {
       .feature .feature-items {
         flex-direction: column; } }
   .feature .feature-item {
-    flex-basis: calc(( 100% - 12rem ) / 4);
+    flex-basis: calc((100% - 12rem) / 4);
     display: flex;
     flex-direction: column; }
     .feature .feature-item .logo {

@@ -13,7 +13,7 @@
   user-select: none;
   transition: all 0.2s linear;
   width: 100%;
-  @media (max-width: $vw-mobile-min) {
+  @media (max-width: $vw-sm) {
     padding: 0.7em 2em;
   }
   svg {

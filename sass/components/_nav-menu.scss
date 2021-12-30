@@ -22,7 +22,7 @@
     font-weight: 300;
     color: $color-black;
   }
-  @media (min-width: $vw-mobile-min) {
+  @media (min-width: $vw-sm) {
     & {
       display: none;
     }

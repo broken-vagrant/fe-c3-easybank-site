@@ -2,10 +2,13 @@ footer {
   background: $color-blue;
   width: 100%;
   padding: 4rem 0;
+  @media (max-width: $vw-lg) {
+    padding: 4rem 1rem;
+  }
   .container {
     display: flex;
     justify-content: space-between;
-    @media (max-width: $vw-mobile-min) {
+    @media (max-width: $vw-md) {
       flex-direction: column;
       align-items: center;
     }
@@ -14,9 +17,10 @@ footer {
     flex-basis: 55%;
     display: flex;
     justify-content: space-between;
-    @media (max-width: $vw-mobile-min) {
+    @media (max-width: $vw-md) {
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
   }
   .logo {
@@ -26,14 +30,14 @@ footer {
       fill: white;
     }
   }
-  @media (max-width: $vw-mobile-min) {
+  @media (max-width: $vw-md) {
     .logo {
       text-align: center;
     }
   }
   .socials {
     margin-top: 5rem;
-    @media (max-width: $vw-mobile-min) {
+    @media (max-width: $vw-md) {
       margin-top: 1rem;
     }
     ul {
@@ -73,7 +77,7 @@ footer {
   .links {
     font-size: 1.6rem;
     width: 60%;
-    @media (max-width: $vw-mobile-min) {
+    @media (max-width: $vw-md) {
       ul {
         flex-direction: column !important;
         align-items: center;

@@ -3,8 +3,9 @@
   width: 100%;
   background: $color-white;
   .container {
-    max-width: $vw-desktop-min;
+    max-width: $vw-max-width;
     margin: 0 auto;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +14,7 @@
     background: $color-white;
     transition: border 0.2s ease;
 
-    @media (max-width: $vw-mobile-min) {
+    @media (max-width: $vw-sm) {
       height: 6em;
       padding: 0 1rem;
     }
@@ -28,7 +29,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    @media (max-width: $vw-mobile-min) {
+    @media (max-width: $vw-lg) {
       display: none;
     }
     > a + a {
@@ -60,12 +61,12 @@
     border: 0;
     padding: 0.5rem;
     cursor: pointer;
-    @media (min-width: $vw-mobile-min) {
+    @media (min-width: $vw-lg) {
       display: none;
     }
   }
   .invite {
-    @media (max-width: $vw-mobile-min) {
+    @media (max-width: $vw-lg) {
       display: none;
     }
   }

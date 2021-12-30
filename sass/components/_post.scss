@@ -1,9 +1,6 @@
 .post {
   width: 23%;
-
-  @media (max-width: $vw-mobile-min) {
-    width: 100%;
-  }
+  min-width: 325px;
 
   border-radius: 4px;
   background: $color-white;
@@ -43,12 +40,5 @@
   }
   p {
     margin: 1rem 0;
-  }
-}
-.post + .post {
-  margin-left: 2.5rem;
-  @media (max-width: $vw-mobile-min) {
-    margin-left: 0;
-    margin-top: 2rem;
   }
 }

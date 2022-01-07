@@ -12,7 +12,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -40,6 +39,7 @@ Users should be able to:
 
   ![developed prototype](./developed/easybank-moble-1.png)
 </details>
+
 ### Links
 
 - Solution URL: [live demo](https://zkindest.github.io/fe-c3-easybank-site/)
